@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
-import { Users, Scale, Award, Heart } from 'lucide-react';
+import { Users, Scale, Award } from 'lucide-react';
 
 const metrics = [
   {
@@ -39,7 +39,7 @@ export function ImpactMetrics() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {metrics.map((metric, index) => (
             <Card key={index} className="p-6 text-center">
-              <metric.icon className="h-12 w-12 mx-auto mb-4 text-[#B8860B]" />
+              <metric.icon className="h-12 w-12 mx-auto mb-4 text-[#2500E0]" />
               <h3 className="text-4xl font-bold mb-2">
                 {animated ? metric.value : 0}{metric.suffix}
               </h3>

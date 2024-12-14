@@ -43,7 +43,7 @@ export function NewsletterForm() {
         required
         className="bg-white text-black"
       />
-      <Button type="submit" disabled={loading} className="className=diagonal-gradient diagonal-gradient-hover">
+      <Button type="submit" disabled={loading} className="className= diagonal-gradient-hover">
         {loading ? 'Subscribing...' : 'Subscribe'}
       </Button>
     </form>
