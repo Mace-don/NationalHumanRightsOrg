@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Scale } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from "next/image";
 
@@ -18,21 +18,20 @@ export function Navigation() {
 
   return (
     <nav className="diagonal-gradient text-white">
-      <div className="max-w-8xl mx-auto px-10 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-22">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              {/*<Scale className="h-8 w-8" />*/}
               <Image
                   src="https://i.postimg.cc/KzmX07Rw/logo.jpg"
-                  width={70}
-                  height={70}
+                  width={100}
+                  height={100}
                   alt="NHRO"
               />
               <div className="pl-5 mt-2 mb-2">
-                <span className="font-bold text-3xl block font-serif">RASHTRIYA MANAV ADHIKAR SANGATHAN</span>
-                <span className="text-l block">Registered by Govt. of INDIA</span>
-                <span className="text-sm block">Niti Aayog, UNIQUE ID: UP/2024/0455222</span>
+                <span className="font-bold sm:text-xl md:text-2xl lg:text-3xl block font-serif">RASHTRIYA MANAV ADHIKAR SANGATHAN</span>
+                <span className="sm:text-xs md:text-sm lg:text-base xl:text-lg block">Registered by Govt. of INDIA</span>
+                <span className="sm:text-xs md:text-sm lg:text-base xl:text-lg">Niti Aayog, UNIQUE ID: UP/2024/0455222</span>
               </div>
             </Link>
           </div>
@@ -44,7 +43,7 @@ export function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="diagonal-gradient-hover px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="diagonal-gradient-hover px-3 py-2 rounded-md text-xl font-medium transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -59,7 +58,7 @@ export function Navigation() {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
-              className="text-white hover:bg-[#8B6508]"
+              className="diagonal-gradient-hover text-white"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -74,7 +73,7 @@ export function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block hover:bg-[#8B6508] px-3 py-2 rounded-md text-base font-medium"
+                  className="block diagonal-gradient-hover px-3 py-2 rounded-md text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
