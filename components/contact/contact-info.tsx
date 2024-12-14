@@ -4,24 +4,24 @@ const contactDetails = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '1-800-RIGHTS',
-    link: 'tel:1-800-RIGHTS',
+    value: '+91-9456111343',
+    link: 'tel:+919456111343',
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'info@nhro.org',
-    link: 'mailto:info@nhro.org',
+    value: 'nhro.chairman@gmail.com',
+    link: 'mailto:nhro.chairman@gmail.com',
   },
   {
     icon: Clock,
     label: 'Working Hours',
-    value: 'Monday - Friday: 9AM - 5PM',
+    value: 'Monday - Saturday: 10AM - 5PM',
   },
   {
     icon: MapPin,
     label: 'Address',
-    value: '123 Human Rights Ave, Washington, DC 20001',
+    value: 'Seema colony, Kailsa road Amroha, 244221(UP)',
   },
 ];
 

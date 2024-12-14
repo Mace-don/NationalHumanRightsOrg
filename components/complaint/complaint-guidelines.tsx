@@ -32,7 +32,7 @@ export function ComplaintGuidelines() {
         <div className="space-y-6">
           {guidelines.map((guideline) => (
             <div key={guideline.title} className="flex gap-3">
-              <guideline.icon className="h-6 w-6 text-[#B8860B] flex-shrink-0" />
+              <guideline.icon className="h-6 w-6 text-[#2500E0] flex-shrink-0" />
               <div>
                 <h3 className="font-semibold mb-1">{guideline.title}</h3>
                 <p className="text-sm text-gray-600">{guideline.description}</p>
@@ -42,14 +42,14 @@ export function ComplaintGuidelines() {
         </div>
       </Card>
 
-      <Card className="p-6 bg-[#B8860B] text-white">
+      <Card className="p-6 diagonal-gradient text-white">
         <h2 className="text-xl font-bold mb-4">Emergency Situations</h2>
         <p className="mb-4">
           If you&apos;re in immediate danger or witnessing a serious human rights violation:
         </p>
         <ul className="list-disc list-inside space-y-2">
           <li>Contact local law enforcement</li>
-          <li>Call our emergency hotline: 1-800-HELP-NOW</li>
+          <li>Emergency hotline: +91-9690665960</li>
           <li>Document everything if safe to do so</li>
         </ul>
       </Card>

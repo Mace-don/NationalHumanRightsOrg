@@ -41,9 +41,9 @@ export function NewsletterForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="bg-white"
+        className="bg-white text-black"
       />
-      <Button type="submit" disabled={loading}>
+      <Button type="submit" disabled={loading} className="className=diagonal-gradient diagonal-gradient-hover">
         {loading ? 'Subscribing...' : 'Subscribe'}
       </Button>
     </form>

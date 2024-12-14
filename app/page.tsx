@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { NewsletterForm } from '@/components/newsletter-form';
 import { ImpactMetrics } from '@/components/impact-metrics';
 
@@ -25,7 +24,7 @@ export default function Home() {
             We work tirelessly to protect and promote fundamental human rights for all people
           </p>
           <Link href="/file-complaint">
-            <Button size="lg" className="bg-[#B8860B] hover:bg-[#8B6508]">
+            <Button size="lg" className="diagonal-gradient hover:diagonal-gradient-hover">
               File a Complaint
             </Button>
           </Link>
@@ -65,7 +64,7 @@ export default function Home() {
       {/*</section>*/}
 
       {/* Newsletter Section */}
-      <section className="bg-[#B8860B] text-white py-16">
+      <section className="diagonal-gradient text-white py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Stay Informed</h2>
           <p className="mb-8">

@@ -17,7 +17,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="bg-[#B8860B] text-white">
+    <nav className="diagonal-gradient text-white">
       <div className="max-w-8xl mx-auto px-10 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-22">
           <div className="flex items-center">
@@ -29,18 +29,22 @@ export function Navigation() {
                   height={70}
                   alt="NHRO"
               />
-              <span className="font-bold text-2xl">NHRO</span>
+              <div className="pl-5 mt-2 mb-2">
+                <span className="font-bold text-3xl block font-serif">RASHTRIYA MANAV ADHIKAR SANGATHAN</span>
+                <span className="text-l block">Registered by Govt. of INDIA</span>
+                <span className="text-sm block">Niti Aayog, UNIQUE ID: UP/2024/0455222</span>
+              </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
+            {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="hover:bg-[#8B6508] px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="diagonal-gradient-hover px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {item.label}
                 </Link>

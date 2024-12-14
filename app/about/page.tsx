@@ -22,15 +22,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our History</h2>
-              <p className="text-gray-600 mb-4">
-                Founded in 1998, the National Human Rights Organization has been at the forefront 
-                of human rights advocacy for over two decades. Our journey began with a small 
-                group of dedicated activists and has grown into a nationwide movement.
+              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+              <p className="text-gray-600 font-bold mb-4">
+                  The main objective of the National Human Rights Organization is to fulfill the concept of making India prosperous and strong. The vision of a corruption-free advanced society, to provide rights to the economically weak, backward and minority women and men who are suffering in the society, to provide justice to the victimized women and children of any class and to provide constitutional assistance.
               </p>
-              <p className="text-gray-600">
-                Today, we continue to fight for justice, equality, and human dignity across all 
-                communities, addressing both longstanding and emerging human rights challenges.
+              <p className="text-gray-600 font-bold">
+                  To motivate the youth by providing proper guidance and organizing employment oriented workshops. At present, ensuring the needs of the common man in terms of education, medical health, security is the basic need and ensuring his availability of utility. To emphasize on the need to implement uniform education across India by curbing corruption and wide inequality in the field of education. To implement the principle of Uniform Civil Code for building a strong and prosperous India and to do it on priority basis. To convey the thoughts of the Honorable Prime Minister, who has the vision of Ek Bharat, Shreshtha Bharat, Sabka Saath, Sabka Vikas, to the people.
+
               </p>
             </div>
             <div className="relative h-[400px]">
@@ -47,7 +45,7 @@ export default function AboutPage() {
 
       <CoreValues />
       <TeamSection />
-      <Partners />
+      {/*<Partners />*/}
     </div>
   );
 }

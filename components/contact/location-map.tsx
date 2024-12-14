@@ -4,7 +4,7 @@ export function LocationMap() {
       <h2 className="text-2xl font-bold mb-6">Our Location</h2>
       <div className="aspect-video relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1494250613257!2d-77.0365298846566!3d38.89767537957089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sThe%20White%20House!5e0!3m2!1sen!2sus!4v1627984892939!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3492.8137379951727!2d78.48958577551078!3d28.903882575517688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDU0JzE0LjAiTiA3OMKwMjknMzEuOCJF!5e0!3m2!1sen!2sin!4v1734163927729!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}

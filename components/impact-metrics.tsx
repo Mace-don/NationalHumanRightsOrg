@@ -23,12 +23,6 @@ const metrics = [
     value: 10,
     suffix: '',
   },
-  {
-    icon: Heart,
-    label: 'Partner Organizations',
-    value: 10,
-    suffix: '+',
-  },
 ];
 
 export function ImpactMetrics() {
@@ -42,7 +36,7 @@ export function ImpactMetrics() {
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-8 text-center">Our Impact</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {metrics.map((metric, index) => (
             <Card key={index} className="p-6 text-center">
               <metric.icon className="h-12 w-12 mx-auto mb-4 text-[#B8860B]" />
