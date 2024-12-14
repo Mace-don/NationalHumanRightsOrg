@@ -32,7 +32,7 @@ export function CoreValues() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
             <Card key={index} className="p-6">
-              <value.icon className="h-12 w-12 text-[#B8860B] mb-4" />
+              <value.icon className="h-12 w-12 text-[#2500E0] mb-4" />
               <h3 className="text-xl font-bold mb-2">{value.title}</h3>
               <p className="text-gray-600">{value.description}</p>
             </Card>
