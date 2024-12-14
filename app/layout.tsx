@@ -21,6 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <head>
+      <link rel="icon" href="https://i.postimg.cc/KzmX07Rw/logo.jpg" />
+      <title>Rashtriya Manav Adhikar Sangathan</title>
+    </head>
       <body className={inter.className}>
         <Navigation />
         <main className="min-h-screen">{children}</main>
