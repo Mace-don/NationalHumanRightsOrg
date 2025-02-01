@@ -68,12 +68,23 @@ export function ComplaintForm() {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setLoading(true);
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      toast({
-        title: 'Complaint Submitted',
-        description: 'We will review your complaint and contact you soon.',
-      });
+        const response = await fetch("https://formcarry.com/s/--CKqh0Xo76", {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(values)
+        });
+        if (!response.ok) {
+            throw new Error("Failed to submit form");
+        }
+        else {
+            toast({
+                title: 'Complaint Submitted',
+                description: 'We will review your complaint and contact you soon.',
+            });
+        }
       form.reset();
     } catch (error) {
       toast({
